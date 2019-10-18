@@ -1,0 +1,46 @@
+body::before {
+  display: none;
+}
+.typ-subhed {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+.container {
+  height: 50%;
+  width: 25%;
+  margin: auto;
+}
+.container > * {
+  width: 100%;
+}
+.ctrl-standard.yes {
+  background: #34d976;
+  display:block;
+  margin-bottom:20px;
+}
+.ctrl-standard.no {
+  background: #d93f34;
+  display:block;
+  margin-bottom:20px;
+}
+.ctrl-standard.maybe {
+  background: #e67f00;
+  display:block;
+  margin-bottom:20px;
+}
+.ctrl-standard.forth {
+  background: #0fe600;
+  display:block;
+  margin-bottom:20px;
+}
+[class*="ctrl-"] {
+  padding: 5px 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid #231f20;
+  color: #ffffff;
+  font-size: 50px;
+}

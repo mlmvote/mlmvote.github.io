@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Realtime voting demo</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet prefetch' href='https://ilt-insightdlp-static.s3.amazonaws.com/css/default.css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script type="text/javascript" src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+
+
+<body>
+
+
+<div class="container">
+    <button class="btn typ-subhed ctrl-standard yes" id="yesbtn" onclick="yesClicked()">1</button>
+    <button class="btn typ-subhed ctrl-standard no" id="nobtn" onclick="noClicked()" >2</button>
+    <button class="btn typ-subhed ctrl-standard maybe" id="maybebtn" onclick="maybeClicked()" >3</button>
+    <button class="btn typ-subhed ctrl-standard forth" id="forthbtn" onclick="forthClicked()" >4</button>
+</div>
+
+
+
+</body>
+
+</html>
